@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class FooterInformation extends Model
 {
-    //
+    protected $table = 'footer_information';
+    protected $primaryKey = 'id';
+    public $incrementing = true;
+    protected $keyType = 'int';
+    public $timestamps = false;
 }
