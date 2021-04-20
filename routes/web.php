@@ -16,3 +16,8 @@
 $router->get('/chart-data', 'ChartDataController@selectAllData');
 $router->get('/client-review', 'ClientReviewController@selectAllReview');
 $router->post('/add-contact-data', 'ContactController@addContactData');
+
+// courses route here
+$router->get('/home-course', 'CourseController@selectFourseCourse');
+$router->get('/all-course', 'CourseController@selectAllCourse');
+$router->post('/course-details', 'CourseController@selectCourseDetails');

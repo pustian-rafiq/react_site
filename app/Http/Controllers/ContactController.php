@@ -11,7 +11,7 @@ class ContactController extends Controller
         $email = $request->input('email');
         $message = $request->input('message');
 
-        $result = ContactTable::insert(['name'=> $name, 'email' => $email, 'message' => $message]);
+        $result = ContactTable::insert(['name' => $name, 'email' => $email, 'message' => $message]);
         if($result){
             return "Data insert successfully";
         }else{
