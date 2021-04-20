@@ -14,3 +14,4 @@
 */
 
 $router->get('/chart-data', 'ChartDataController@selectAllData');
+$router->get('/client-review', 'ClientReviewController@selectAllReview');
