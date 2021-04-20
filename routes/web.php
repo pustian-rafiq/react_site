@@ -21,5 +21,13 @@ $router->post('/add-contact-data', 'ContactController@addContactData');
 $router->get('/home-course', 'CourseController@selectFourseCourse');
 $router->get('/all-course', 'CourseController@selectAllCourse');
 $router->post('/course-details', 'CourseController@selectCourseDetails');
+
 $router->get('/footer-data', 'FooterController@selectFooterData');
 $router->get('/footer-information', 'FooterInformationController@selectFooterInformation');
+$router->get('/services-data', 'ServiceController@selectServicesData');
+// Projects route here
+$router->get('/home-project', 'ProjectController@selectThreeCourse');
+$router->get('/all-projects', 'ProjectController@selectAllProjects');
+$router->post('/project-details', 'ProjectController@selectProjectDetails');
+
+$router->get('/home-video', 'VideoController@selectVideosData');
