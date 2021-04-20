@@ -7,8 +7,8 @@ use App\Models\HomeEtc;
 class VideoController extends Controller
 {
        //Select footer data
-       function selectVideosData(){
-        $result = HomeEtc::select('video_url','video_description')->get();
-        return $result;
-    }
+    //    function selectVideosData(){
+    //     $result = HomeEtc::select('video_url','video_description')->get();
+    //     return $result;
+    // }
 }

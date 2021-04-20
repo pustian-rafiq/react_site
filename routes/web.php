@@ -30,4 +30,8 @@ $router->get('/home-project', 'ProjectController@selectThreeCourse');
 $router->get('/all-projects', 'ProjectController@selectAllProjects');
 $router->post('/project-details', 'ProjectController@selectProjectDetails');
 
-$router->get('/home-video', 'VideoController@selectVideosData');
+//Home routes for HomeEtc table
+$router->get('/home-video', 'HomeEtcController@selectVideosData');
+$router->get('/project-client', 'HomeEtcController@selectTotalProjectClient');
+$router->get('/tech-description', 'HomeEtcController@selectTechDescription');
+$router->get('/title-subtitle', 'HomeEtcController@selectHomeTitleSubTitle');
