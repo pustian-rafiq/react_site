@@ -22,3 +22,4 @@ $router->get('/home-course', 'CourseController@selectFourseCourse');
 $router->get('/all-course', 'CourseController@selectAllCourse');
 $router->post('/course-details', 'CourseController@selectCourseDetails');
 $router->get('/footer-data', 'FooterController@selectFooterData');
+$router->get('/footer-information', 'FooterInformationController@selectFooterInformation');
