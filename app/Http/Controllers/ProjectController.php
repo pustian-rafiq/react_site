@@ -17,8 +17,8 @@ class ProjectController extends Controller
         return $result;
     }
     //Select details information for a course
-    function selectProjectDetails(Request $request){
-        $id = $request->input('id');
+    function selectProjectDetails($id){
+       // $id = $request->input('id');
         $result = ProjectsTable::where(['id' => $id])->get();
         return $result;
     }

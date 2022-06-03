@@ -17,8 +17,8 @@ class CourseController extends Controller
         return $result;
     }
     //Select details information for a course
-    function selectCourseDetails(Request $request){
-        $id = $request->input('id');
+    function selectCourseDetails($id){
+       // $id = $request->input('id');
         $result = CourseTable::where(['id' => $id])->get();
         return $result;
     }

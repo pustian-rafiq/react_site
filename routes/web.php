@@ -6,7 +6,7 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
+|infinity auth: user: epiz_31872479, dbname: epiz_31872479_laravel, host: sql310.epizy.com
 | Here is where you can register all of the routes for an application.
 | It is a breeze. Simply tell Lumen the URIs it should respond to
 | and give it the Closure to call when that URI is requested.
@@ -20,7 +20,7 @@ $router->post('/add-contact-data', ['middleware'=>'auth','uses'=>'ContactControl
 // courses route here
 $router->get('/home-course', ['middleware'=>'auth','uses'=>'CourseController@selectFourseCourse']);
 $router->get('/all-course', ['middleware'=>'auth','uses'=>'CourseController@selectAllCourse']);
-$router->post('/course-details', ['middleware'=>'auth','uses'=>'CourseController@selectCourseDetails']);
+$router->get('/course-details/{id}', ['middleware'=>'auth','uses'=>'CourseController@selectCourseDetails']);
 
 $router->get('/footer-data', ['middleware'=>'auth','uses'=>'FooterController@selectFooterData']);
 $router->get('/footer-information', ['middleware'=>'auth','uses'=>'FooterInformationController@selectFooterInformation']);
@@ -28,7 +28,7 @@ $router->get('/services-data', ['middleware'=>'auth','uses'=>'ServiceController@
 // Projects route here
 $router->get('/home-project', ['middleware'=>'auth','uses'=>'ProjectController@selectThreeCourse']);
 $router->get('/all-projects', ['middleware'=>'auth','uses'=>'ProjectController@selectAllProjects']);
-$router->post('/project-details', ['middleware'=>'auth','uses'=>'ProjectController@selectProjectDetails']);
+$router->get('/project-details/{id}', ['middleware'=>'auth','uses'=>'ProjectController@selectProjectDetails']);
 
 //Home routes for HomeEtc table
 $router->get('/home-video', ['middleware'=>'auth','uses'=>'HomeEtcController@selectVideosData']);
